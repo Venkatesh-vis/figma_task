@@ -38,12 +38,13 @@ const Main = () => {
                 return(
                     <>
                     <div className="card">
-                        <img src={imgs[i]} alt={c.name} height={200}/>
+                        <img src={imgs[i]} alt={c.name} height={200} />
                         <h2>{c.name}</h2>
                         <h5>{c.email}</h5>
-                        <h6>{c.company.name}</h6>
-                        <h6>{c.city}</h6>
-                        <h6>{c.phone}</h6>
+                        <span>{c.company.name}</span>
+                        <span>{c.city}</span>
+                        <span>{c.phone}</span>
+                        <span>{c.company.bs}</span>
                     </div>
                     </>
                 )
